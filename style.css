@@ -6,16 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 #logo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     width: 100%;
-    height: 100px;
+    height: 60px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 5px;
     color: red;
     background-image: url("https://www.nescafe.com/in/sites/default/files/2023-04/Product%20Finder_Header.jpeg.jpg");
     background-position: center;
@@ -46,14 +46,14 @@ body {
 }
 .parent{
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     gap: 10px;
     padding: 0 10px;
 }
 #child1{
     width: 20%;
-    height: 100%;
+    height: 90%;
     background: #fff;
     box-shadow: 10px;
     padding: 20px;
@@ -72,7 +72,7 @@ body {
     
 }
 #child2 #cards{
-    height: 60%;
+    height: 50%;
     width: 100%;
     
     display: flex;
@@ -106,8 +106,70 @@ body {
    
 }
 
+#form{
+    height: 100%;
+    width: 100%;
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#formChild{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 70%;
+    background: #ffffff;
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: #313131 10px;
+}
+textarea{
+    background: #ededed;
+
+    
+    border-radius:9px
+
+}
+form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    /* background: #000; */
+    margin-top: 30px;
+}
+
+input[type="text"], input[type="email"]{
+    background: #ededed;
+    
+    border: 5px solid #ffffff;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 8px;
+    
+}
+input:focus{
+    background: #e9e9e9;
+    /* transition: cubic-bezier(0.19, 1, 0.22, 1); */
+    color: rgb(0, 145, 255);
+    border: none;
+    
+}
+
+#submit{
+    background: #007eb5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px
+}
+
 footer{
-    margin-top: 20px;
+    
     width: 100%;
     height: 10vh;
     background-color: #313131;
@@ -117,5 +179,5 @@ footer{
     padding: 20px;
     text-align: center;
     font-size: 18px;
-    color: black;
+    color: rgb(235, 235, 235);
 }
